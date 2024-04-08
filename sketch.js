@@ -1,2 +1,7 @@
 let container = document.querySelector(".container");
-const div = document.createElement("div");
+
+for (let i = 0; i < 256; i++) {
+    const box = document.createElement("div");
+    box.classList.add("box")
+    container.appendChild(box)
+};
