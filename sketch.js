@@ -6,3 +6,9 @@ for (let i = 0; i < numBoxes; i++) {
     box.classList.add("box")
     container.appendChild(box)
 };
+
+let boxes = document.querySelectorAll(".box");
+
+for (let i = 0; i < boxes.length; i++) {
+    box = boxes[i]
+};
