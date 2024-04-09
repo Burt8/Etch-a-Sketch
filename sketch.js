@@ -9,6 +9,8 @@ for (let i = 0; i < numBoxes; i++) {
 
 let boxes = document.querySelectorAll(".box");
 
-for (let i = 0; i < boxes.length; i++) {
-    box = boxes[i]
-};
+boxes.forEach(function(div) {
+    div.addEventListener("mouseover", function() {
+        div.classList.add("paint")
+    })
+});
