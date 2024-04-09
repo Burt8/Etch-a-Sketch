@@ -10,6 +10,7 @@ body {
     flex-wrap: wrap;
     height:auto;
     width:435px;
+    margin-top:36px;
 }
 .box {
     border: solid 1px black;
