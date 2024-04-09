@@ -5,6 +5,13 @@ body {
     flex-direction: column;
     margin: 24px;
 }
+.size {
+    padding: 8px 16px 8px 16px;
+    border-radius: 12px;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+}
 .canvas {
     display:flex;
     flex-wrap: wrap;
