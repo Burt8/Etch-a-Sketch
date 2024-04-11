@@ -23,4 +23,6 @@ size.onclick = () => {
     while (canvas.firstChild) {
         canvas.removeChild(canvas.firstChild)
     }
+    gridGen()
+    addPaint()
 }
