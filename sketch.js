@@ -10,13 +10,14 @@ function gridGen() {
     };
 }
 
-let boxes = document.querySelectorAll(".box");
-
-boxes.forEach(function(div) {
-    div.addEventListener("mouseover", function() {
-        div.classList.add("paint")
-    })
-});
+function addPaint() {
+    let boxes = document.querySelectorAll(".box");
+    boxes.forEach(function(div) {
+        div.addEventListener("mouseover", function() {
+            div.classList.add("paint")
+        })
+    });
+}
 
 size.onclick = () => {
     while (canvas.firstChild) {
