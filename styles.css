@@ -11,18 +11,19 @@ body {
     background-color: black;
     color: white;
     font-size: 16px;
+    margin: 0 0 36px 0;
 }
 .canvas {
+    width:600px;
+    height:600px;
+    border: 1px solid black;
     display:flex;
     flex-wrap: wrap;
-    height:auto;
-    width:435px;
-    margin-top:36px;
 }
 .box {
-    border: solid 1px black;
-    height: 22px;
-    width: 24px;
+    border:1px solid black;
+    flex-grow: 1;
+    flex-basis: 34.5px;
 }
 .paint {
     background-color:black;
