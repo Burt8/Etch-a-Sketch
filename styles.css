@@ -23,7 +23,6 @@ body {
 .box {
     border:1px solid black;
     flex-grow: 1;
-    flex-basis: 34.5px;
 }
 .paint {
     background-color:black;
