@@ -10,12 +10,15 @@ function basisCalc() {
 function resize() {
     basisCalc()
     let style = document.createElement("style");
+    let active = document.querySelectorAll("style")
     style.innerHTML = ".box {flex-basis: " + pixels + "%}"
-    if (document.querySelector("style") === true) {
-        document.removeChild(style)
-    } else {    
+    if (active.length === 1) {
+        document.head.removeChild(document.querySelector("style"))
+        document.head.appendChild(style)
+    } else {
         document.head.appendChild(style)
     }
+ 
 }
 function gridGen() {
     for (let i = 0; i < numBoxes; i++) {
@@ -49,7 +52,7 @@ size.onclick = () => {
     }
     gridGen()
     addPaint()
-    basisCalc()
+    resize()
 }
 
 gridGen()
