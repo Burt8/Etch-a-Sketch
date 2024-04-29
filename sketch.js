@@ -39,11 +39,11 @@ function addPaint() {
 }
 
 size.onclick = () => {
-    let y = prompt("How many squares would you like per grid?")
+    const y = prompt("How many squares would you like per grid?")
     if (y > 100) {
         alert("Please choose a number below 101")
         return null
-    } else if (y === NaN) {
+    } else if (typeof y === "string") {
         alert("Please enter a NUMBER")
     }
     numBoxes = y * y
