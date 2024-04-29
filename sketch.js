@@ -5,13 +5,13 @@ let pixels = 0
 
 function basisCalc() {
     let boxSize = 600/Math.sqrt(numBoxes);
-    pixels = ((boxSize - 3)/6)
+    pixels = (boxSize - 2)
 }
 function resize() {
     basisCalc()
     let style = document.createElement("style");
     let active = document.querySelectorAll("style")
-    style.innerHTML = ".box {flex-basis: " + pixels + "%}"
+    style.innerHTML = ".box {flex-basis: " + pixels + "px}"
     if (active.length === 1) {
         document.head.removeChild(document.querySelector("style"))
         document.head.appendChild(style)
