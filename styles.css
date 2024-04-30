@@ -3,7 +3,6 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin: 24px;
 }
 .size {
     padding: 8px 16px 8px 16px;
@@ -11,7 +10,7 @@ body {
     background-color: black;
     color: white;
     font-size: 16px;
-    margin: 0 0 36px 0;
+    margin: 36px 0 0 0;
 }
 .canvas {
     width:600px;
