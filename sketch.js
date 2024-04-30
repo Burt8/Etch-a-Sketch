@@ -28,7 +28,6 @@ function gridGen() {
     }
  };
 
-
 function addPaint() {
     let boxes = document.querySelectorAll(".box");
     boxes.forEach(function(div) {
@@ -40,13 +39,15 @@ function addPaint() {
 
 size.onclick = () => {
     const y = prompt("How many squares would you like per grid?")
-    if (y > 100) {
+    let x = parseInt(y)
+    if (x > 100) {
         alert("Please choose a number below 101")
         return null
-    } else if (typeof y === "string") {
-        alert("Please enter a NUMBER")
+    } else if (x <= 0) {
+        alert("Please choose a number above 0")
+        return null
     }
-    numBoxes = y * y
+    numBoxes = x * x
     while (canvas.firstChild) {
         canvas.removeChild(canvas.firstChild)
     }
